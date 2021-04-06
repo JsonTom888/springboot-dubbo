@@ -11,7 +11,8 @@ import org.springframework.context.annotation.Bean;
 @SpringBootApplication
 public class SpringbootConsumerApplication {
 
-    @Reference(url = "dubbo://192.168.122.1:20880/com.jsontom.sampleapi.service.IHelloService")
+//    @Referen(url = "dubbo://192.168.122.1:20880/com.jsontom.sampleapi.service.IHelloService")
+    @Reference
     private IHelloService helloService;
 
     public static void main(String[] args) {
